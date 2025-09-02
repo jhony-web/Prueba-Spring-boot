@@ -8,7 +8,7 @@ public class Product {
     private String nombre;
     private Double price;
 
-    public Product() {} // constructor vacío requerido por Spring
+    public Product() {} //
 
     public Product(String nombre, Double price) {
         this.nombre = nombre;

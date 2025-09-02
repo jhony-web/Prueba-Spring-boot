@@ -5,15 +5,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/seller")
+@RequestMapping("/v1")
 public class SellerController {
 
     @Autowired
     private Seller seller;
 
-    @GetMapping("/info")
-    public String getInfo() {
-        seller.showInfo();
-        return "Información mostrada en consola";
+    @GetMapping("/say")
+    public String getSeller() {
+
+        return seller.showInfo();
     }
 }

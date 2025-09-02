@@ -12,8 +12,11 @@ public class Seller {
     @Autowired
     private Product product;
 
-    public void showInfo() {
-        System.out.println("seller: " + this.name + " store " + this.store);
-        System.out.println("name product: " + product.getNombre() + " - price: " + product.getPrice());
+    public String showInfo() {
+        String info = "seller: " + this.name + " store: " + this.store +
+                " | product: " + product.getNombre() + " - price: " + product.getPrice();
+
+        System.out.println(info); //
+        return info;              //
     }
 }
